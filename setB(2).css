@@ -1,0 +1,21 @@
+body{
+	background-color: lightskyblue;
+}
+ul .head{
+	padding-top: 20px;
+	color: blue;
+	font-size: 40px;
+}
+ul .type1{
+	color: green;
+	font-size:30px;
+}
+ul .type2{
+	color: purple;
+	font-size:30px;
+}
+ul .type3{
+	padding-top: 10px;
+	color: red;
+	font-size:30px;
+}
