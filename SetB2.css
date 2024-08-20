@@ -1,0 +1,144 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-bar nav{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    padding-left: 40px;
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+nav h1 span{
+    font-size: 20px;
+    color: gray;
+}
+nav .icons a{
+    font-size: 20px;
+    margin-right: 30px;
+}
+nav .icons h4{
+    color: white;
+    text-align: center;
+}
+nav h4 img{
+    width: 60px;
+    height: 60px;
+}
+/*----------------------------------------------------------*/
+.middle-bar nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.middle-bar nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+}
+.middle-bar nav ul a{
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    position: relative;    
+}
+.middle-bar nav ul a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.middle-bar nav ul a:hover::after{
+    width: 100%;
+}
+.middle-bar nav search{
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: brown;
+    padding: 7px;
+    border-radius: 10px;
+}
+/*---------------------------------------------*/
+.box-container{
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.box,.box1{
+    width: 300px;
+    height: 150px;
+    margin: 5px;
+    padding: 10px;
+}
+#box1,#box2,#box3,#box4{
+    background: white;
+}
+#box1 h6,#box2 h6,#box3 h6,#box4 h6{
+    color: brown;
+    font-size: 15px;
+}
+#box1 span,#box2 span,#box3 span,#box4 span{
+    font-size: 15px;
+    background-color: brown;
+    border-radius: 20px;
+    display: inline;
+    padding: 7px;
+    color: white;
+}
+.text{
+    padding-top: 90px;
+}
+/*---------------------------------------------------------------------*/
+.last-container{
+    padding-left: 85px;
+    padding-top: 20px;
+}
+.left-content{
+    display: flex;
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: '';
+    display: block;
+    width: 55%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+}
+.politics{
+    padding-top: 20px;
+    margin-right: 80px;
+}
+.right-content{
+    margin-right: 30px;
+}
+.right-content p{
+    padding-top: 10px;
+}
